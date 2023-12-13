@@ -101,14 +101,9 @@ else:
 
 
 
-s = pd.read_csv(r'C:\Users\zooke\Desktop\Final Project\social_media_usage.csv')
+s = pd.read_csv('social_media_usage.csv')
 
-uploaded_file = st.file_uploader(
-    "Choose your database", accept_multiple_files=False)
-if uploaded_file is not None:
-    file_name = uploaded_file
-else:
-    file_name = "DatabaseSample.xlsx"
+
 
 
 import sklearn
